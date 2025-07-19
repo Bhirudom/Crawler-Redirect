@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crawler Redirect</title>
+</head>
+<body>
+  <h2>Enter Crawler Number</h2>
+  <input type="number" id="crawlerInput" placeholder="e.g., 15">
+  <button onclick="redirectToURL()">Submit</button>
+
+  <script>
+    function redirectToURL() {
+      const num = document.getElementById("crawlerInput").value;
+      const url = `http://crawler.linkmydeals.com/cc${num}/dashboard.php`;
+      window.location.href = url; // Redirects the user to the generated URL
+    }
+  </script>
+</body>
+</html>
